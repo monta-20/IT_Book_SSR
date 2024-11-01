@@ -1,0 +1,152 @@
+[
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab55423c" },
+    "title": "Learning Python",
+    "description": "A comprehensive guide to Python programming for beginners and advanced users.",
+    "price": 59.99,
+    "author": "Mark Lutz",
+    "image": "Learning_Python.jpg",
+    "reviews": 120,
+    "rating": 4.5
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab55423d" },
+    "title": "Deep Learning",
+    "description": "An in-depth exploration of deep learning concepts and architectures.",
+    "price": 89.99,
+    "author": "Ian Goodfellow",
+    "image": "Deep_Learning.jpg",
+    "reviews": 85,
+    "rating": 4.8
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab55423e" },
+    "title": "Python Crash Course",
+    "description": "A hands-on, project-based introduction to Python programming.",
+    "price": 39.99,
+    "author": "Eric Matthes",
+    "image": "Python_Crash_Course.jpg",
+    "reviews": 150,
+    "rating": 4.7
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab55423f" },
+    "title": "Fluent Python",
+    "description": "A deep dive into Python to help developers write better, more efficient code.",
+    "price": 64.99,
+    "author": "Luciano Ramalho",
+    "image": "Fluent_Python.jpg",
+    "reviews": 95,
+    "rating": 4.6
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554240" },
+    "title": "JavaScript: The Good Parts",
+    "description": "A detailed look into the best practices and most effective features of JavaScript.",
+    "price": 34.99,
+    "author": "Douglas Crockford",
+    "image": "JS_Good_Parts.jpg",
+    "reviews": 75,
+    "rating": 4.4
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554241" },
+    "title": "Effective Java",
+    "description": "A comprehensive guide to best practices in Java programming.",
+    "price": 55.99,
+    "author": "Joshua Bloch",
+    "image": "Effective_Java.jpg",
+    "reviews": 110,
+    "rating": 4.9
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554242" },
+    "title": "Head First Java",
+    "description": "A learner-friendly approach to Java programming, full of practical examples.",
+    "price": 49.99,
+    "author": "Kathy Sierra",
+    "image": "Head_First_Java.jpg",
+    "reviews": 60,
+    "rating": 4.2
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554243" },
+    "title": "Introduction to Machine Learning with Python",
+    "description": "A practical guide to building machine learning systems with Python.",
+    "price": 69.99,
+    "author": "Andreas C. Müller",
+    "image": "ML.jpg",
+    "reviews": 80,
+    "rating": 4.7
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554244" },
+    "title": "The Linux Command Line",
+    "description": "A complete introduction to the Linux command line for both beginners and experienced users.",
+    "price": 29.99,
+    "author": "William Shotts",
+    "image": "Linux_cl.jpg",
+    "reviews": 40,
+    "rating": 4.3
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554245" },
+    "title": "Grokking Algorithms",
+    "description": "An illustrated guide for programmers to learn how algorithms work.",
+    "price": 44.99,
+    "author": "Aditya Bhargava",
+    "image": "Algo.jpg",
+    "reviews": 65,
+    "rating": 4.5
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554246" },
+    "title": "Code: The Hidden Language of Computer Hardware and Software",
+    "description": "A detailed exploration of the inner workings of computers and software.",
+    "price": 39.99,
+    "author": "Charles Petzold",
+    "image": "hard_soft.jpg",
+    "reviews": 55,
+    "rating": 4.6
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554247" },
+    "title": "Computer Networking: A Top-Down Approach",
+    "description": "An in-depth look at networking fundamentals from a practical perspective.",
+    "price": 79.99,
+    "author": "James Kurose",
+    "image": "computer_net.jpg",
+    "reviews": 90,
+    "rating": 4.8
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554248" },
+    "title": "Operating Systems: Three Easy Pieces",
+    "description": "A clear, engaging introduction to the basic concepts of operating systems.",
+    "price": 59.99,
+    "author": "Remzi H. Arpaci-Dusseau",
+    "image": "OS.jpg",
+    "reviews": 70,
+    "rating": 4.4
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab554249" },
+    "title": "SQL for Data Scientists",
+    "description": "A practical guide to using SQL for data analysis and database management.",
+    "price": 45.99,
+    "author": "Renee M. P. Teate",
+    "image": "SQL.jpg",
+    "reviews": 50,
+    "rating": 4.3
+  },
+  {
+    "_id": { "$oid": "66f0d18e16aefce5ab55424a" },
+    "title": "Compilers: Principles, Techniques, and Tools",
+    "description": "A classic text on compiler construction and programming language design.",
+    "price": 95,
+    "author": "Alfred V. Aho",
+    "image": "Compiler.jpg",
+    "reviews": 30,
+    "rating": 4.1
+  }
+]

@@ -1,0 +1,126 @@
+<%- include('parts/top.ejs') %>
+
+<!-- Page Content -->
+<div class="page-heading contact-heading header-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-content">
+          <h4>Contact Us</h4>
+          <h2>Embark on a Journey with Us</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="find-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Explore Our Location on the Map</h2>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <!-- How to change your own map point -->
+        <div id="map">
+          <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="330px" 
+                  frameborder="0" 
+                  style="border:0" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="left-content">
+          <h4>Discover Our Office</h4>
+          <p>Welcome to our office, a hub of creativity and collaboration! Nestled in the vibrant city, our space is designed for inspiration and innovation.<br><br>Join us for an exciting journey where ideas come to life, and every visitor is a valued partner in our adventure.</p>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="send-message">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Reach Out to Us</h2>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="contact-form">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Your Full Name" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input name="email" type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject of Your Message" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="filled-button">Send Your Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <ul class="accordion">
+          <li>
+            <a>Exploration Highlights</a>
+            <div class="content">
+              <p>Delve into the heart of our operations. Our office is not just a workplace; it’s a vibrant community where ideas thrive and creativity blossoms. Experience the spirit of innovation with us!</p>
+            </div>
+          </li>
+          <li>
+            <a>Tourist Tips</a>
+            <div class="content">
+              <p>Whether you’re visiting us or exploring the city, don’t miss the local attractions! Enjoy the rich culture, delectable cuisine, and stunning landscapes that make this place a must-see.</p>
+            </div>
+          </li>
+          <li>
+            <a>Connect with Our Team</a>
+            <div class="content">
+              <p>Meet the passionate individuals behind our projects! Our team is here to guide you and answer any questions you may have, ensuring your journey with us is memorable.</p>
+            </div>
+          </li>
+          <li>
+            <a>Upcoming Events</a>
+            <div class="content">
+              <p>Stay tuned for our exciting events! We host workshops, tours, and interactive sessions that invite you to engage and collaborate with us.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('parts/bottom.ejs') %>

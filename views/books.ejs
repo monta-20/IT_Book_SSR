@@ -1,0 +1,61 @@
+<%- include('parts/top.ejs')%>
+<!-- Page Content -->
+<div class="page-heading products-heading header-text">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <div class="text-content">
+          <h4 class="text-muted">New Arrivals</h4>
+          <h2 class="font-weight-bold">Sixteen Products</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="filters-content">
+          <div class="row grid">
+
+            <% for (let book of books) { %>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-item border rounded shadow-sm">
+                  <a href="/books/<%= book._id %>" target="_blank">
+                    <img class="img-fluid" style="height: 350px; object-fit: cover;" src="/uploads/<%= book.image %>" alt="<%= book.title %>">
+                  </a>
+                  <div class="down-content p-3">
+                    <a href="/books/<%= book._id %>" target="_blank" class="text-decoration-none">
+                      <h4 class="text-primary"><%= book.title %></h4>
+                    </a>
+                    <h6 class="text-success">$<%= book.price %></h6>
+                    <p class="text-muted"><%= book.description %></p>
+                    <ul class="stars list-unstyled">
+                      <li class="d-inline"><i class="fa fa-star"></i></li>
+                      <li class="d-inline"><i class="fa fa-star"></i></li>
+                      <li class="d-inline"><i class="fa fa-star"></i></li>
+                      <li class="d-inline"><i class="fa fa-star"></i></li>
+                      <li class="d-inline"><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span class="text-muted">Reviews (12)</span>
+                  </div>
+                </div>
+              </div>
+            <% } %> 
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<%-include('parts/bottom.ejs')%>

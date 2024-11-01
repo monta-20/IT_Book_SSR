@@ -1,0 +1,33 @@
+<%- include('parts/top.ejs') %>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Login</h2>
+
+  <form method="POST" action="/login" class="shadow p-4 rounded bg-light">
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form1Example1" name="email" class="form-control" placeholder="Email" required />
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input type="password" id="form1Example2" name="password" class="form-control" placeholder="Password" required />
+    </div>
+
+    <!-- Error message -->
+    <% if (message) { %>
+      <div class="alert alert-danger" role="alert">
+        <%= message %>
+      </div>
+    <% } %>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block">Login</button>
+    
+    <div class="text-center mt-3">
+      <a href="/register" class="text-decoration-none">Don't have an account? Register here</a>
+    </div>
+  </form>
+</div>
+
+<%- include('parts/bottom.ejs') %>

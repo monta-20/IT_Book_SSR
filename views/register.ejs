@@ -1,0 +1,38 @@
+<%- include('parts/top.ejs') %>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Create Your Account</h2>
+
+  <form method="POST" action="/register" class="shadow p-4 rounded bg-light">
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form1Example1" name="name" class="form-control" placeholder="Name" required />
+    </div>
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form1Example2" name="email" class="form-control" placeholder="Email" required />
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input type="password" id="form1Example3" name="password" class="form-control" placeholder="Password" required />
+    </div>
+
+    <!-- Error message -->
+    <% if (message) { %>
+      <div class="alert alert-danger" role="alert">
+        <%= message %>
+      </div>
+    <% } %>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block">Register</button>
+    
+    <div class="text-center mt-3">
+      <a href="/login" class="text-decoration-none">Already have an account? Login here</a>
+    </div>
+  </form>
+</div>
+
+<%- include('parts/bottom.ejs') %>

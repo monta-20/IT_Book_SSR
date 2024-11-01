@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>IT Book Store</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fontawesome.css">
+    <link rel="stylesheet" href="/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="/css/owl.css">
+    <style>
+        /* Custom styles for the navbar */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #007bff; /* Change to blue */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .navbar:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .navbar-brand {
+            color: #fff; /* White color */
+            font-weight: bold;
+            font-size: 1.5rem; /* Larger font size */
+            animation: pulse 1.5s infinite; /* Animation effect */
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff; /* White text */
+            transition: color 0.3s; /* Smooth transition for link color */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107; /* Gold on hover */
+        }
+        .nav-link.btn {
+            color: white; /* White text color for the button */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 15px; /* Padding for better button size */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+        }
+        .nav-link.btn:hover {
+            background-color: #c82333; /* Darker red on hover */
+            transform: scale(1.05); /* Slight scale effect on hover */
+        }
+        .logout-button {
+            color: #ffffff;
+            border: none;
+            background: none;
+        }
+        .logout-button:hover {
+            color: #ffc107; /* Gold on hover */
+        }
+
+        /* Keyframe for pulse animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/">IT Book Store</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <% if (verifUser) { %>
+                <li class="nav-item">
+                  <a class="nav-link" href="/books">All Books</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/addbook">Add Book</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/mybooks">My Books</a>
+                </li>
+                <li class="nav-item">
+                  <form  method="POST" action="/logout">
+                    <button class="nav-link btn btn-danger" type="submit">Logout</button>
+                  </form>
+                </li>
+              <% } else { %>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">Login</a> <!-- Red button style -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">Register</a>
+                </li>
+              <% } %>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Add your content here -->
+        <h2>Welcome to IT Book Store</h2>
+        <p>Your one-stop shop for IT books!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<%- include('parts/top.ejs') %>
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div class="banner header-text">
+  <div class="owl-banner owl-carousel">
+    <div class="banner-item-01">
+      <div class="text-content">
+        <h4>Best Offer</h4>
+        <h2>New Arrivals On Sale</h2>
+        <a href="#" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+    <div class="banner-item-02">
+      <div class="text-content">
+        <h4>Flash Deals</h4>
+        <h2>Get Your Best Products</h2>
+        <a href="#" class="btn btn-primary">Grab the Deal</a>
+      </div>
+    </div>
+    <div class="banner-item-03">
+      <div class="text-content">
+        <h4>Last Minute</h4>
+        <h2>Grab Last Minute Deals</h2>
+        <a href="#" class="btn btn-primary">Don't Miss Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Banner Ends Here -->
+
+<div class="latest-products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Latest Products</h2>
+          <a href="products.html" class="btn btn-link">View All Products <i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <% for(let book of books) { %>
+      <div class="col-md-4">
+        <div class="product-item">
+          <a href="/books/<%= book._id %>"><img style="height: 350px;" src="uploads/<%= book.image %>" alt="<%= book.title %>"></a>
+          <div class="down-content">
+            <a href="/books/<%= book._id %>"><h4><%= book.title %></h4></a>
+            <h6>$<%= book.price %></h6>
+            <p><%= book.description %></p>
+            <ul class="stars">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <span>Reviews (24)</span>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<div class="best-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>About Our Book Store</h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="left-content">
+          <h4>Looking for the best books?</h4>
+          <p>Explore our extensive collection. We offer the best deals for your reading pleasure.</p>
+          <ul class="featured-list">
+            <li><a href="#">Diverse Genres</a></li>
+            <li><a href="#">Best-Selling Authors</a></li>
+            <li><a href="#">Exclusive Offers</a></li>
+            <li><a href="#">Fast Delivery</a></li>
+            <li><a href="#">Customer Satisfaction</a></li>
+          </ul>
+          <a href="about.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="right-image">
+          <img src="images/feature-image.jpg" alt="Books Showcase">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="inner-content">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>Creative &amp; Unique <em>Books</em> Just For You</h4>
+              <p>Discover our handpicked selection of books tailored to every reader's taste.</p>
+            </div>
+            <div class="col-md-4">
+              <a href="#" class="btn btn-success">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('parts/bottom.ejs') %>
